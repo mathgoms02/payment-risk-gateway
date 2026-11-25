@@ -1,0 +1,45 @@
+# --- Java / Maven ---
+target/
+*.class
+*.jar
+*.war
+*.log
+hs_err_pid*
+.mvn/wrapper/maven-wrapper.jar
+
+# --- IDEs ---
+.idea/
+*.iml
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+out/
+bin/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Docker volumes (local data) ---
+data/
+volumes/
+
+# --- Load test output ---
+load-test/results/*.json
+
+# --- AI tooling ---
+# Installed skills are reproducible from skills-lock.json
+.claude/skills/
+.agents/skills/
+.claude/settings.local.json
+# BMad per-user install answers
+_bmad/config.user.toml
